@@ -4,7 +4,7 @@
 }
 body{
     background-image: url(./image/bg_img.png);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     max-width: 1920px;
     max-height: 1080px;
@@ -14,6 +14,7 @@ body{
     max-width: 1440px;
     padding: 5px;
     position: relative;
+    min-width: 1440px;
 }
 .logo{
     width: 120px;
@@ -70,8 +71,112 @@ body{
     font-weight: 100;
     font-style: italic;
 }
+/* slider */
+.swiper-container {
+	height:470px;
+	border-radius:7px;
+    width: 470px;
+    position: absolute;
+    left: 0px;
+    margin-top: 50px;
+}
+.swiper-container img{
+    transition: all 0.3s ease-in-out;
+}
+.fir img{
+    width: 230px;
+    height: 230px;
+    padding: 5px;
+    
+}
+.sen img{
+    width: 230px;
+    height: 470px;
+    padding: 5px;
+}
+.fir{
+    height: 230px;
+    width: 230px;
+}
+.sen{
+    height: 470px;
+    width: 230px;
+}
+.swiper-pagination-bullet-active {
+    background-color: #aa26da;
+}
+.swiper-button-next{
+    width: 25px;
+    height: 25px;
+    opacity: 30%;
+}
+.swiper-button-prev{
+    width: 25px;
+    height: 25px;
+    opacity: 30%;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover{
+    opacity: 100%;
+}
+/*slider end*/
+
+.sub_text{
+    width: 230px;
+    position: absolute;
+    left: 480px;
+    top: 293px;
+    
+}
+.sub_text p{
+    width: 230px;
+    text-align: left;
+    font-size: 9pt;
+    font-family: arial, sans-serif;
+}
+span{
+    font-weight: bold;
+}
+.shop_btn{
+    position: absolute;
+    left: 520px;
+    top: 720px;
+    text-align: center;
+}
+.shop_btn button{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ca5dd7+38,e59c49+100 */
+background: #ca5dd7; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #ca5dd7 38%, #e59c49 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #ca5dd7 38%,#e59c49 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #ca5dd7 38%,#e59c49 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca5dd7', endColorstr='#e59c49',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    color: white;
+    font-size: 11pt;
+    font-weight: bold;
+    font-family: Arial,sans-serif;
+    box-shadow: 1px 1px 3px 0.5px rgba(0,0,0,0.7);
+    cursor: pointer;
+    
+}
+.shop_btn button:hover{
+    box-shadow: 0px 0px 0.1px 1px rgba(0,0,0,0.2);
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#bf17d6+39,e27c0f+100 */
+background: #bf17d6; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #bf17d6 39%, #e27c0f 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #bf17d6 39%,#e27c0f 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #bf17d6 39%,#e27c0f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf17d6', endColorstr='#e27c0f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
 
 
+
+
+
+/*animate*/
 @keyframes goLeft {
     from {margin-top: 10px;}
     to {margin-top: -10px}
