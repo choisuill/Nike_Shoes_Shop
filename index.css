@@ -15,6 +15,7 @@ body{
     padding: 5px;
     position: relative;
     min-width: 1440px;
+    height: 750px;
 }
 .logo{
     width: 120px;
@@ -162,6 +163,36 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca5dd7', end
     
 }
 .shop_btn button:hover{
+    box-shadow: 0px 0px 0.1px 1px rgba(0,0,0,0.2);
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#bf17d6+39,e27c0f+100 */
+background: #bf17d6; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #bf17d6 39%, #e27c0f 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #bf17d6 39%,#e27c0f 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #bf17d6 39%,#e27c0f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf17d6', endColorstr='#e27c0f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+.myBag_btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ca5dd7+38,e59c49+100 */
+background: #ca5dd7; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #ca5dd7 38%, #e59c49 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #ca5dd7 38%,#e59c49 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #ca5dd7 38%,#e59c49 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca5dd7', endColorstr='#e59c49',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+position: absolute;
+bottom: 0;
+right: 0;
+box-shadow: 1px 1px 3px 0.5px rgba(0,0,0,0.7);
+    cursor: pointer;
+}
+.myBag_btn a img{
+    transform: translate(50%,50%);
+}
+
+.myBag_btn:hover{
     box-shadow: 0px 0px 0.1px 1px rgba(0,0,0,0.2);
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#bf17d6+39,e27c0f+100 */
 background: #bf17d6; /* Old browsers */
