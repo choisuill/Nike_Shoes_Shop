@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;   
+}
+body{
+    background-image: url(./image/bg_img.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    max-width: 1920px;
+    max-height: 1080px;
+}
+.wrap{
+    margin: 50px auto;
+    max-width: 1440px;
+    padding: 5px;
+    position: relative;
+}
+.logo{
+    width: 120px;
+    display: inline-block;
+    float: left;
+    cursor: pointer;
+}
+.logo img{
+    max-width: 100%;
+
+}
+.header a{
+    font-family: 'Arial Narrow';
+    font-weight: 600;
+    font-size: 18pt;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+.top_nav li{
+    display: inline;
+    list-style-type: none;
+    position: relative;
+}
+.top_nav li a:hover:after{
+    content: "";
+    display: inline-block;
+    border: 5px solid #aa26da;
+    vertical-align: middle;
+    border-radius: 100%;
+    transition: all .3s ease-in-out;
+    position: absolute;
+    left: 56px;
+    margin-top: -10px;
+}
+.top_nav li a:after{
+    animation-name:goLeft;
+    animation-duration: 0.3s;
+}
+.title{
+    margin-top: 10px;
+    font-family: impact;
+}
+.main{
+    font-size: 127px;
+}
+.sub{
+    margin-top: -10px;
+    font-size: 26px;
+    font-weight: 100;
+    font-style: italic;
+}
+
+
+@keyframes goLeft {
+    from {margin-top: 10px;}
+    to {margin-top: -10px}
+}
